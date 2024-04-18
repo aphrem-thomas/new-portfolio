@@ -20,7 +20,7 @@ export default function Home() {
               JavaScript | React | NodeJS Developer
           </div>
           <div className="connectButtons">
-            <button className="h-10 w-32 rounded-md bg-contrast-button-main text-background">Let's Connect</button>
+            <button className="h-10 w-32 rounded-md bg-contrast-button-main text-background">Let&apos;s Connect</button>
           </div>
         </div>
       </div>
