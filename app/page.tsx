@@ -9,7 +9,7 @@ export default function Home() {
             <img className="rounded-full h-16" src="/aphrem.jpg" alt="" />
           </div>
           <div className="salutation text-4xl mt-4">
-            Hello it's Aphrem Thomas
+            Hello it&apos;s Aphrem Thomas
           </div>
         </div>
         <div className="intro flex flex-col justify-between mt-6 h-40">
