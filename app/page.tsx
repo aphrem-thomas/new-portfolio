@@ -1,10 +1,13 @@
 import Image from "next/image";
+import Aos from "./components/aos";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-center">
-      <div className="hello p-2 flex flex-col h-[75vh] items-center justify-center md:flex-row md:container">
-        <div className="profileAndWelcome flex-col">
+    <>
+      <Aos/>
+      <main className="w-full flex flex-col items-center">
+      <div className="hello p-6 flex flex-col h-[75vh] items-center justify-center md:flex-row md:container">
+        <div className="profileAndWelcome flex-col" data-aos="fade-right"  >
           <div className="pic rounded-xl">
             <img className="rounded-full h-16" src="/aphrem.jpg" alt="" />
           </div>
@@ -12,7 +15,8 @@ export default function Home() {
             Hello it&apos;s Aphrem Thomas
           </div>
         </div>
-        <div className="intro flex flex-col justify-between mt-6 h-40 md:ml-20">
+        <div className="intro flex flex-col justify-between mt-6 h-40 md:ml-20" data-aos="fade-right" 
+        data-aos-duration="1000">
           <div className="introheader text-2xl">
             Web Developer based in Ottawa Canada.
           </div>
@@ -28,5 +32,6 @@ export default function Home() {
       </div>
       <div className="boasting w-full bg-background-secondary h-96"></div>
     </main>
+    </>
   );
 }
