@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Aos from "./components/aos";
+import { TechStack } from "./components/techStack";
 
 export default function Home() {
   return (
     <>
       <Aos/>
       <main className="w-full flex flex-col items-center">
-      <div className="hello p-6 flex flex-col h-[75vh] items-center justify-center md:flex-row md:container">
+      <div className="hello p-6 flex flex-col h-[70vh] items-center justify-center md:flex-row md:container">
         <div className="profileAndWelcome flex-col" data-aos="fade-right"  >
           <div className="pic rounded-xl">
             <img className="rounded-full h-16" src="/aphrem.jpg" alt="" />
@@ -21,7 +22,7 @@ export default function Home() {
             Web Developer based in Ottawa Canada.
           </div>
           <div className="introsubheader text-contrast-text-secondary">
-              JavaScript | React | NodeJS Developer
+              JavaScript | React | NodeJS | Go lang
           </div>
           <div className="connectButtons">
             <a href="/contact">
@@ -30,7 +31,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="boasting w-full bg-background-secondary h-96"></div>
+      <div className="boasting w-full p-8 bg-background-secondary">
+        <TechStack/>
+      </div>
     </main>
     </>
   );
